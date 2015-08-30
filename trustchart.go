@@ -1,14 +1,14 @@
 // package main
-
+//
 // import (
 // 	"fmt"
 // 	"github.com/pdevty/trustchart"
 // 	"io/ioutil"
 // 	"os"
 // )
-
+//
 // func main() {
-
+//
 // 	// params json format
 // 	// term 1y (1 year ) 2y 3y ...
 // 	//      1m (1 month) 2m 3m ...
@@ -23,19 +23,19 @@
 // 			{"id":"2931113C","name":"ﾆｯｾｲ外国株"}
 // 		]
 // 	}`
-
+//
 // 	// new
 // 	tc, err := trustchart.New(params)
 // 	if err != nil {
 // 		panic(err)
 // 	}
-
+//
 // 	// return csv
 // 	fmt.Println(tc.Csv())
-
+//
 // 	// return html
 // 	fmt.Println(tc.Html())
-
+//
 // 	// create html file
 // 	ioutil.WriteFile("index.html",
 // 		[]byte(tc.Html()), os.ModePerm)
