@@ -1,20 +1,20 @@
-// package main
+//  package main
 //
-// import (
-// 	"fmt"
-// 	"github.com/pdevty/trustchart"
-// 	"io/ioutil"
-// 	"os"
-// )
+//  import (
+// 	  "fmt"
+// 	  "github.com/pdevty/trustchart"
+// 	  "io/ioutil"
+// 	  "os"
+//  )
 //
-// func main() {
+//  func main() {
 //
-// 	// params json format
-// 	// term 1y (1 year ) 2y 3y ...
-// 	//      1m (1 month) 2m 3m ...
-// 	//      1d (1 day  ) 2d 3d ...
-// 	// brand id,name from yahoo finance japan
-// 	params := `{
+// 	  // params json format
+// 	  // term 1y (1 year ) 2y 3y ...
+// 	  //      1m (1 month) 2m 3m ...
+// 	  //      1d (1 day  ) 2d 3d ...
+// 	  // brand id,name from yahoo finance japan
+// 	  params := `{
 // 		"term":"1y",
 // 		"brands":[
 // 			{"id":"89311067","name":"jrevive"},
@@ -22,24 +22,24 @@
 // 			{"id":"03316042","name":"健次"},
 // 			{"id":"2931113C","name":"ﾆｯｾｲ外国株"}
 // 		]
-// 	}`
+// 	  }`
 //
-// 	// new
-// 	tc, err := trustchart.New(params)
-// 	if err != nil {
-// 		panic(err)
-// 	}
+// 	  // new
+// 	  tc, err := trustchart.New(params)
+// 	  if err != nil {
+// 	    panic(err)
+// 	  }
 //
-// 	// return csv
-// 	fmt.Println(tc.Csv())
+// 	  // return csv
+// 	  fmt.Println(tc.Csv())
 //
-// 	// return html
-// 	fmt.Println(tc.Html())
+// 	  // return html
+// 	  fmt.Println(tc.Html())
 //
-// 	// create html file
-// 	ioutil.WriteFile("index.html",
-// 		[]byte(tc.Html()), os.ModePerm)
-// }
+// 	  // create html file
+// 	  ioutil.WriteFile("index.html",
+// 	  	  []byte(tc.Html()), os.ModePerm)
+//  }
 package trustchart
 
 import (
