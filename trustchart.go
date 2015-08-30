@@ -10,8 +10,9 @@
 // func main() {
 
 // 	// params json format
-// 	// term 1y (1year ) 2y 3y ...
-// 	//      1m (1month) 2m 3m ...
+// 	// term 1y (1 year ) 2y 3y ...
+// 	//      1m (1 month) 2m 3m ...
+// 	//      1d (1 day  ) 2m 3m ...
 // 	params := `{
 // 		"term":"1y",
 // 		"brands":[
@@ -28,10 +29,10 @@
 // 		panic(err)
 // 	}
 
-// 	// return (investment trust chart) csv
+// 	// return csv
 // 	fmt.Println(tc.Csv())
 
-// 	// return (investment trust chart) html
+// 	// return html
 // 	ioutil.WriteFile("trustchart.html",
 // 		[]byte(tc.Html()), os.ModePerm)
 // }

@@ -2,7 +2,7 @@
 
 create investment trust chart from yahoo finance japan
 
-![chart](https://github.com/pdevty/trustchart/chart.png)
+![chart](https://github.com/pdevty/trustchart/blob/master/chart.png)
 
 ## Installation
 
@@ -42,10 +42,10 @@ func main() {
 		panic(err)
 	}
 
-	// return (investment trust chart) csv
+	// return csv
 	fmt.Println(tc.Csv())
 
-	// return (investment trust chart) html
+	// return html
 	ioutil.WriteFile("trustchart.html",
 		[]byte(tc.Html()), os.ModePerm)
 }
