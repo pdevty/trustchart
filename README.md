@@ -1,6 +1,6 @@
 # trustchart [![GoDoc](https://godoc.org/github.com/pdevty/trustchart?status.svg)](https://godoc.org/github.com/pdevty/trustchart)
 
-create investment trust chart from yahoo finance japan
+create investment trust chart from ![yahoo finance japan](http://apl.morningstar.co.jp/webasp/yahoo-fund/fund/index.aspx)
 
 ![chart](https://github.com/pdevty/trustchart/blob/master/chart.png)
 
@@ -26,6 +26,7 @@ func main() {
 	// term 1y (1 year ) 2y 3y ...
 	//      1m (1 month) 2m 3m ...
 	//      1d (1 day  ) 2d 3d ...
+	// brand id,name from yahoo finance japan
 	params := `{
 		"term":"1y",
 		"brands":[
@@ -46,7 +47,10 @@ func main() {
 	fmt.Println(tc.Csv())
 
 	// return html
-	ioutil.WriteFile("trustchart.html",
+	fmt.Println(tc.Html())
+
+	// create html file
+	ioutil.WriteFile("index.html",
 		[]byte(tc.Html()), os.ModePerm)
 }
 ```
