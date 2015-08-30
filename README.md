@@ -1,6 +1,6 @@
 # trustchart [![GoDoc](https://godoc.org/github.com/pdevty/trustchart?status.svg)](https://godoc.org/github.com/pdevty/trustchart)
 
-create investment trust chart from ![yahoo finance japan](http://apl.morningstar.co.jp/webasp/yahoo-fund/fund/index.aspx)
+create investment trust chart from [yahoo finance japan](http://apl.morningstar.co.jp/webasp/yahoo-fund/fund/index.aspx)
 
 ![chart](https://github.com/pdevty/trustchart/blob/master/chart.png)
 
